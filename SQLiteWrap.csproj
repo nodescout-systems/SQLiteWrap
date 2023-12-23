@@ -9,6 +9,12 @@
     <AssemblyName>SQLiteWrap</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Title>SQLiteWrap</Title>
+    <PackageProjectUrl>https://github.com/nodescout-systems/SQLiteWrap</PackageProjectUrl>
+    <Description>This project is a .NET library that provides a simplified interface for working with SQLite databases.</Description>
+    <RepositoryUrl>https://github.com/nodescout-systems/SQLiteWrap</RepositoryUrl>
+    <PackageTags>SQLite; wrapper</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>doc/README.md</PackageReadmeFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <ShouldCreateLogs>True</ShouldCreateLogs>
@@ -72,6 +78,13 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="doc\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio AllowExistingFolder="true" />
